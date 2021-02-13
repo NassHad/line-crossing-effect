@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    background: rgb(36,56,203);
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-shadow: 4px 4px 0 rgba(255,166,0, 0.85), 7px 7px 0 rgba(0,0,0,0.2);
+}
+.line{
+    background: rgb(255,255,85);
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    transform: translate(-25%, -50%);
+    z-index: 2;
+    width: 0;
+    border-radius: 50px;
+    animation: line 1s linear forwards;
+}
+.letter{
+    z-index: 3;
+}
+@keyframes line {
+    to{
+        width: 132vw;
+    }
+}
